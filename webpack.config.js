@@ -1,11 +1,13 @@
 module.exports = {
+  target: 'node',
   entry: {
-    "module-exports": "./module-exports.js",
-    "export-default": "./export-default.js"
+    "module-exports": "./src/module-exports.js",
+    "export-default": "./src/export-default.js"
   },
   output: {
     path: 'dist',
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    libraryTarget: 'commonjs2'
   },
   module: {
     loaders: [{

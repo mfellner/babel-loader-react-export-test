@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class Index extends React.Component {
+class Index extends React.Component {
   render() {
     return (
       <html lang="en">
@@ -15,3 +15,9 @@ export default class Index extends React.Component {
 Index.propTypes = {
   message: React.PropTypes.string
 }
+
+Index.defaultProps = {
+  message: 'no message provided'
+}
+
+module.exports = Index
