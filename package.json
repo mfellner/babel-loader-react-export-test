@@ -4,7 +4,8 @@
   "description": "Demonstrate babel-loader bug",
   "private": true,
   "scripts": {
-    "webpack": "webpack",
+    "webpack-default": "rm -rf dist && webpack --config webpack.default.config.js",
+    "webpack-plugin": "rm -rf dist && webpack --config webpack.plugin.config.js",
     "test": "rm -rf dist && mocha"
   },
   "author": "Maximilian Fellner",
@@ -20,6 +21,7 @@
     "mocha": "2.3.3",
     "react": "0.14.2",
     "react-dom": "0.14.2",
+    "rimraf": "^2.4.3",
     "webpack": "1.12.6"
   }
 }
