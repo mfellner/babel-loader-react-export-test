@@ -1,5 +1,7 @@
 # babel-loader-react-export test
 
+**Update:** Fixed with [#1](https://github.com/mfellner/babel-loader-react-export-test/pull/1). Also see http://stackoverflow.com/questions/33505992/babel-6-changes-how-it-exports-default.
+
 Demonstration of a possible bug with babel-loader 6.1 when using a custom webpack plugin. It's a comparison of two methods to define a React component:
 
 Using ES2015 exports:
