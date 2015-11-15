@@ -54,7 +54,9 @@ StaticReactSource.prototype.source = function() {
 
   var script = compile();
   var context = createContext();
-  var reactClass = script.runInContext(context);
+  var result = script.runInContext(context);
+  // exports.default or module.exports
+  var reactClass = result.default || result;
   var Component = React.createFactory(reactClass);
   var html = ReactDOMServer.renderToStaticMarkup(Component());
 
